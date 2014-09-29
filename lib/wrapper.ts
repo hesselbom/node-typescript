@@ -21,5 +21,5 @@ var fs = require('fs'),
     vm.runInNewContext(contents, sandbox, 'ts.vm');
 
     var TypeScript = module.exports.TypeScript = sandbox.expTypeScript;
-    TypeScript.moduleGenTarget = TypeScript.ModuleGenTarget.Synchronous;
+    TypeScript.moduleGenTarget = TypeScript.ModuleGenTarget.Asynchronous;
 })();
